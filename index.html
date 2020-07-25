@@ -3,56 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>COVID-19</title>
     <link rel="stylesheet" href="app.css" />
     <script src="app.js" defer></script>
-    <script src="testing.js" defer></script>
-    
+    <script src="rendering.js" defer></script>
+    <script
+      src="https://canvasjs.com/assets/script/canvasjs.min.js"
+      defer
+    ></script>
+    <script src="chart.js"></script>
   </head>
   <body>
-    <div class="container"><h2>COVID-19 Total Country Cases--</h2></div>
+    <div id="navBar"><h2>COVID-19</h2></div>
 
-    <div class="headers">
-      <div id="total">
-        <h3>Total:</h3>
-        <div style="margin-top: 0.5rem;"></div>
+    <section class="col-12 heading">
+      <h3>COVID-19 Total Country Cases--</h3>
+      <div class="TotalData">
+        <div id="total" class="container">
+          <h3>Total:</h3>
+          <div style="margin-top: 0.5rem;"></div>
+        </div>
+        <div id="active" class="container">
+          <h3>Active:</h3>
+          <div style="margin-top: 0.5rem;"></div>
+        </div>
+        <div id="recovered" class="container">
+          <h3>Recovered:</h3>
+          <div style="margin-top: 0.5rem;"></div>
+        </div>
+        <div id="deaths" class="container">
+          <h3>Deaths:</h3>
+          <div style="margin-top: 0.5rem;"></div>
+        </div>
       </div>
-      <div id="active">
-        <h3>Active:</h3>
-        <div style="margin-top: 0.5rem;"></div>
-      </div>
-      <div id="recovered">
-        <h3>Recovered:</h3>
-        <div style="margin-top: 0.5rem;"></div>
-      </div>
-      <div id="deaths">
-        <h3>Deaths:</h3>
-        <div style="margin-top: 0.5rem;"></div>
-      </div>
-    </div>
+    </section>
 
-    <div class="container"><h2>COVID-19 StateWise Cases--</h2></div>
+    <section class="col-12 heading">
+      <div
+      id="chartContainer"
+      style="height: 300px; width: 100%; margin: 0 auto;"
+    ></div>
+    </section>
 
-    <div id="showData"></div>
-    <!-- <div class="header">
-      <h1>Corona tracker</h1>
-    </div>
-
-    <div class="row">
-      <div class="col-3 menu col">
-        <ul>
-          <li>TOTAL:<span></span></li>
-          <li>Active:<span></span></li>
-          <li>Recovered:<span></span></li>
-          <li>Deaths:<span></span></li>
-        </ul>
-      </div>
-      <div id="map" class="col col-6">
-          dd
-      </div>
-      <div id="data-table" class="col col-3">
-          dd
-      </div>
-    </div> -->
+    <section class="col-12 heading">
+      <h3>COVID-19 StateWise Cases--</h3>
+      <div id="showData" class="col-12"></div>
+    </section>
   </body>
 </html>

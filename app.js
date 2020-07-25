@@ -8,12 +8,12 @@ const Deaths = document.getElementById("deaths");
 const deathsNumber = Deaths.querySelector("div");
 const tableDiv = document.getElementById("table");
 
-function fetched() {
+function fetcheDataFromApi() {
   return fetch("https://api.covid19india.org/data.json");
 }
 
 async function getData() {
-  const response = await fetched();
+  const response = await fetcheDataFromApi();
   const data =await response.json()
     
       console.log(data.statewise);
