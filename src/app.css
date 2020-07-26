@@ -15,7 +15,7 @@ body {
   align-items: center;
   padding: 1.5rem;
   border: 1px solid grey;
-color: white;
+  color: white;
   background-color: gray;
 }
 
@@ -85,18 +85,33 @@ th {
   font-size: larger;
 }
 
-
+tr:first-child:hover {
+  background-color: #f2cbce;
+}
 
 .col-12 {
   width: 100%;
 }
 
+#chartContainer {
+  height: 300px; width: 70%; margin: 0 auto;
+}
 @media only screen and (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
   }
 
+  #chartContainer {
+    width: 100%;
+    font-size: medium;
+  }
   .container {
-    margin: 10px;
+    margin: 19px;
+  }
+  th {
+    font-size: medium;
+  }
+  td {
+    padding: 9px 0px;
   }
 }
